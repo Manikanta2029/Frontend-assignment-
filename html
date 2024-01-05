@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            box-sizing: border-box;
+            padding: 20px;
+            border: 1px solid #ccc;
+            flex-grow: 1;
+        }
+
+        .boxA,
+        .boxB {
+            flex: 1;
+            background-color: #6b7578;
+          margin: 5px;
+        }
+
+        .boxC {
+            flex: 20%;
+            background-color: #6b7578;
+          margin: 5px;
+        }
+
+        .boxD {
+            flex: 80%;
+            background-color: #6b7578;
+           margin: 5px; 
+        }
+
+        .boxE {
+            flex: 100%;
+            background-color: #6b7578;
+            margin: 5px;
+        }
+
+        @media (max-width: 768px) {
+
+            .boxA,
+            .boxB,
+            .boxC,
+            .boxD,
+            .boxE {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box boxA">
+        <h2> A</h2>
+    </div>
+
+    <div class="box boxB">
+        <h2> B</h2>
+    </div>
+
+    <div class="box boxC">
+        <h2> C</h2>
+    </div>
+
+    <div class="box boxD">
+        <h2> D</h2>
+    </div>
+
+    <div class="box boxE">
+        <h2> E</h2>
+    </div>
+</body>
+
+</html>
